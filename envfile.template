@@ -1,0 +1,48 @@
+# user/pass to configure admin access
+export admin_email="admin@think.com"
+export admin_pass="apic4you"
+
+# Path where apic images are available
+export sources=/home/kadmin/sources
+
+# apic version
+# used to upload package in docker local registry
+export apicversion=v2018.4.1.10
+
+# apicup package filename
+export apicupversion=apicup-linux_lts_v2018.4.1.10
+
+# Replace with you external IP for apiserver on k8s master  
+# for pod_network_cidr 10.244.0.0/16 or 192.168.0.0/16
+export apiserver_advertise_address=PRIVATEIP
+export pod_network_cidr=192.168.0.0/16
+
+# Endpoint
+export ep_api=api.PUBLICIP.nip.io
+export ep_apim=manager.PUBLICIP.nip.io
+export ep_cm=cloud.PUBLICIP.nip.io
+export ep_consumer=consumer.PUBLICIP.nip.io
+export ep_gw=gw.PUBLICIP.nip.io
+export ep_gwd=gwd.PRIVATEIP.nip.io
+export ep_ai=ai.PRIVATEIP.nip.io
+export ep_ac=ac.PRIVATEIP.nip.io
+export ep_padmin=padmin.PRIVATEIP.nip.io
+export ep_portal=portal.PUBLICIP.nip.io
+
+# SMTP Server
+export smtpServer=PRIVATEIP
+export smtpServerPort=2525
+
+# Docker Registry
+export registry=localhost:80/apiconnect
+
+# Datapower type equals native GW datapower-api-gateway, use datapower-gateway for classic
+export ep_gwType=datapower-api-gateway
+
+export dmpimagefilename=dpm20184110.lts.tar.gz
+export idgimagefilename=idg_dk20184110.lts.prod.tar.gz
+
+# create assets for demo
+export porg_name=demo
+export porg_user=demo
+export porg_password=apic4you
