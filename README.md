@@ -5,7 +5,7 @@ APICv2018ltsInstallLinuxRedHat
 `APICv2018ltsInstallLinuxRedHat` provide tools and scripts to install and configure API Connect v2018 on a single kubernetes master node on RedHat Linux 7.x (A single VM)
 
 <p align="center">
-  <img src="topologie.jpg" width="200" />
+  <img src="topologie.jpg" width="300" />
 </p>
 
 # Installing
