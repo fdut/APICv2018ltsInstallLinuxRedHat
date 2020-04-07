@@ -2,14 +2,16 @@ APICv2018ltsInstallLinuxRedHat
 ===========================
 
 # About 
-`APICv2018ltsInstallLinuxRedHat` provide tools and scripts to install and configure API Connect v2018 on a single kubernetes master node on RedHat Linux 7.x
+`APICv2018ltsInstallLinuxRedHat` provide tools and scripts to install and configure API Connect v2018 on a single kubernetes master node on RedHat Linux 7.x (A single VM)
 
 # Installing
 Download the latest release on the home repository on your operating system where you want install API Connect v2018.
 
 # Requirement
 
-The first limiting factor is the ability to meet the hardware requirements. Looking at the current maintenance level of APIC: 2018.4.1.10, current minimum hardware requirements are 12 cores of CPU power and 48GB of RAM. On top of that 532GB of disk space is required.
+The first limiting factor is the ability to meet the hardware requirements for the 4 API Connect components. Looking at the current maintenance level of APIC: 2018.4.1.10, current minimum hardware requirements are 12 cores of CPU power and 48GB of RAM. On top of that 532GB of disk space is required.
+
+https://www.ibm.com/support/knowledgecenter/SSMNED_2018/com.ibm.apic.install.doc/overview_apimgmt_requirements.html
 
 | Component  | vCPU  | RAM  | HDD |
 |:------------- |:---------------:| -------------:| -------------:|
@@ -33,7 +35,7 @@ Other requirement :
 
 # Usage
 
-- (optional) Create a sudo user for kubernetes client admin A
+- (optional) Create a sudo user for kubernetes client admin.
 ```
     useradd kadmin
     passwd kadmin 
@@ -47,7 +49,7 @@ Other requirement :
 
 - Clone github repository
 ```
-    git clone https://github.ibm.com/frederic-dutheil/APICv2018ltsInstallRedHat.git 
+    git clone https://github.com/fdut/APICv2018ltsInstallLinuxRedHat 
 ```
 
 - Donwload kubernetes images from IBM Support [here](https://www.ibm.com/support/fixcentral/swg/identifyFixes?query.parent=ibm~WebSphere&query.product=ibm~WebSphere~IBM%20API%20Connect&query.release=2018.4.1.9&query.platform=Linux) in the directory you define in the **envfile** : `sources`
